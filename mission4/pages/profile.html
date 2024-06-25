@@ -18,32 +18,43 @@
             </div>
             <div style="display: flex;flex-direction: column;margin-left: 20px;">
                 <h1 class="end" >+ New List</h1>
-                <input type="text" style="margin-right: 20px;"id="inputTodo">
+                <input type="text" style="margin-right: 20px;"id="inputTodo" placeholder="Add Your Today Task Here">
                 <div style="margin-top: 10px;">
                     <label for="" >Priority</label>
                         <select name="" id="priorityTodo" style="margin-left: 10px;">
                             <option value="1">1</option>
-                            <option value="3">2</option>
-                            <option value="4">3</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <br>
-                    <button style="margin-top:20px">Submit</button>
+                    <button style="margin-top:20px" onclick="addTask()">Add</button>
                 </div>      
             </div>
         </div>
         <div class="main">
             <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" placeholder="Search To-Do" ></div>
             <h1 class="upline" style="font-size: 30px;">TO-DO LIST</h1>
-            <h3></h3>
+            <ul id="taskList">
+                <!-- <li class="checked">task1</li>
+                <li>task1</li>
+                <li>task1</li> -->
+            </ul>
         </div>
     </div>
-</body>
-<script>
-    function darkMode(){
-        var element=document.body
-        element.classList.toggle("darkMode")
-    }
-    
-</script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/script/script.js"></script>
+</body>
 </html>
