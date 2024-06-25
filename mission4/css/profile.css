@@ -1,0 +1,136 @@
+body{
+    color: whitesmoke;
+    background-color: black;
+}
+body{
+    color: #102C57;
+    background-color: #FEFAF6
+}
+
+/* Dark Mode CSS */
+.darkMode{
+    color:whitesmoke;
+    background-color: #202945
+}   
+.darkMode .main{
+    background-color:#363062;
+    color: #F5E8C7;
+}
+.darkMode #searchBar{
+    background-color: #363062;
+    color: #F5E8C7;
+    border: none;
+    border-bottom: 1px solid #435585;
+}
+.darkMode button{
+    background-color: #F5E8C7;
+    color: #202945;
+    border-radius: 3px;
+    box-shadow: 2px;
+}
+.darkMode .navbar{
+    background-color: #435585;
+    color: #F5E8C7;
+}
+.darkMode .a{
+    color: #F5E8C7;  
+}
+.darkMode #inputTodo{
+    /* border: none; */
+    background-color:#435585 ;
+    color:#F5E8C7;
+    border: 1px solid #F5E8C7 ;
+    border-radius: 5px;
+    height: 50px;
+}
+.darkMode #priorityTodo{
+    background-color:#F5E8C7 ;
+    color:#435585;
+}
+.darkMode .upline{
+    border-bottom: 1px solid #F5E8C7;   
+}
+.darkMode .navDeleted:hover{
+    background-color: #202945;
+    color: #F5E8C7;
+}
+
+
+.a{ 
+    color: #102C57;
+}
+
+h1{
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #DAC0A3;
+    min-height: 500px;
+    /* min-width: 500px; */
+    width:20%;
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow:auto;
+    flex-direction: column;
+    background-color: #EADBC8;
+    
+    height: 500px;
+    width: 100%;
+    max-height:500px ;
+    max-width: 500px;
+    border-radius: 10px;
+}
+#searchBar{
+    border: none;
+    background-color:#EADBC8 ;
+    border-bottom: 1px solid #102C57;
+}
+#inputTodo{
+    /* border: none; */
+    background-color:#DAC0A3;
+    border: 1px solid #102C57;
+    border-radius: 5px;
+    height: 50px;
+    
+}
+#priorityTodo{
+    background-color:#435585 ;
+    color:#DAC0A3
+}
+button{
+    background-color: #435585;
+    color: #EADBC8;
+    border-radius: 3px;
+}
+
+.upline{
+    margin-left: 20px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+
+.navDeleted{
+    width: 60px;
+    transition: 1s;
+    outline: none;
+}
+.navDeleted:hover{
+    color: black;
+    background-color: #F5E8C7;
+}
+
+a:link, a:active,a:visited,a:hover{
+    text-decoration: none;
+}

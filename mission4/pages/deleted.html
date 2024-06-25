@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleted To-Do</title>
+    <link rel="stylesheet" href="/css/deleted.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div style="align-self: center;padding-top: 10px;"><button onclick="darkMode()"class="dark">Dark Mode</button></div>
+            <div style="margin-top: 20px;margin-left: 20px;">
+                <h1 class="navTodo"> <a href="/pages/profile.html" class="a">To-Do</a></h1>
+                <h1 class="navDeleted">Deleted</h1>
+            </div>
+            
+        </div>
+        <div class="main">
+            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" placeholder="Search To-Do" ></div>
+            <h1 class="upline" style="font-size: 30px;">DELETED TO-DO</h1>
+            <h3></h3>
+        </div>
+    </div>
+    <!-- <div ><a href="./darkmode.html">try dark mode</a></div> -->
+</body>
+<script>
+    function darkMode(){
+        var element=document.body
+        element.classList.toggle("darkMode")
+    }
+    
+</script>
+</html>

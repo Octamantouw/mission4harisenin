@@ -1,0 +1,8 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+.darkMode{
+    background-color: black;
+    color: whitesmoke;
+}
