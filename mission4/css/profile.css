@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 body{
     color: whitesmoke;
     background-color: black;
+    font-family:"Playwrite GB S";
 }
 body{
     color: #102C57;
@@ -61,7 +63,7 @@ body{
 }
 
 h1{
-    font-size: 18px;
+    font-size: 16px;
 }
 .container{
     display: flex;
@@ -73,7 +75,8 @@ h1{
     display: flex;
     flex-direction: column;
     background-color: #DAC0A3;
-    min-height: 500px;
+    min-height: 300px;
+    height: 500px;
     /* min-width: 500px; */
     width:20%;
     border-radius: 20px;
@@ -86,6 +89,7 @@ h1{
     flex-direction: column;
     background-color: #EADBC8;
     height: 500px;
+    min-width: 660px;
     width: 100%;
     max-height:500px ;
     max-width: 500px;
@@ -93,7 +97,7 @@ h1{
 }
 ul li{
     list-style: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 8px 10px 30px;
     user-select: none;
     cursor: pointer;
@@ -106,9 +110,10 @@ ul li::before{
     width: 15px;
     border-radius: 50%;
     background-image: url(/images/unchecked.png);
+    mix-blend-mode:difference;
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 17px;
     left: 8px;
 }
 ul li.checked{
@@ -120,8 +125,8 @@ ul li.checked::before{
 }
 ul li span{
     position: absolute;
-    right: 20px;
-    top: 5px;
+    right: 10px;
+    top: 3px;
     height: 20px;
     width: 20px;
     font-size: 18px;
@@ -175,4 +180,28 @@ button{
 
 a:link, a:active,a:visited,a:hover{
     text-decoration: none;
+}
+
+@media screen and (max-width:400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* font-size: 5px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        min-width: 375px;
+        height: 10%;
+        border-radius: 0%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .main{
+        min-width: 375px;
+        overflow: auto;
+        border-radius: 0%;
+    }
+
 }

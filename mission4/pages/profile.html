@@ -6,34 +6,34 @@
     <title>Profile To-Do-List</title>
     <link rel="stylesheet" href="/css/profile.css">
     <script src="https://kit.fontawesome.com/749d2b8155.js" crossorigin="anonymous"></script>
-
+    
 </head>
 <body>
     <div class="container">
         <div class="navbar">
             <div style="align-self: center;padding-top: 10px;"><button onclick="darkMode()"class="dark">Dark Mode</button></div>
-            <div style="margin-top: 20px;margin-left: 20px;">
+            <div style="margin-top: 20px;margin-left: 20px;"id="navbar">
                 <h1 class="navTodo">To-Do </h1>
-                <h1 class="navDeleted"><a href="/pages/deleted.html"class="a">Deleted</a></h1>
+                <h1 class="navDeleted"><a href="/pages/deleted.html"class="a">Recently Deleted</a></h1>
             </div>
             <div style="display: flex;flex-direction: column;margin-left: 20px;">
                 <h1 class="end" >+ New List</h1>
-                <input type="text" style="margin-right: 20px;"id="inputTodo" placeholder="Add Your Today Task Here">
+                <input type="text" style="margin-right: 20px;font-family: 'Playwrite GB S';"id="inputTodo" placeholder="Add Your Today Task Here">
                 <div style="margin-top: 10px;">
                     <label for="" >Priority</label>
-                        <select name="" id="priorityTodo" style="margin-left: 10px;">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                        <select name="" id="priorityTodo" style="margin-left: 10px;height: 25px;">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
                         </select>
-                        <br>
-                    <button style="margin-top:20px" onclick="addTask()">Add</button>
+                        <!-- <br> -->
+                    <button style="margin-top:20px;height: 25px;margin-left: 20px;" onclick="addTask()">Add</button>
                 </div>      
             </div>
         </div>
         <div class="main">
-            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" placeholder="Search To-Do" onkeyup="searchTask()" ></div>
-            <h1 class="upline" style="font-size: 30px;">TO-DO LIST</h1>
+            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" style="font-family: 'Playwrite GB S';" placeholder="Search To-Do" onkeyup="searchTask()" ></div>
+            <h1 class="upline" style="font-size: 20px;">TO-DO LIST</h1>
             <ul id="taskList">
                 <!-- <li class="checked">task1</li>
                 <li>task1</li>
