@@ -17,18 +17,16 @@
             
         </div>
         <div class="main">
-            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" placeholder="Search To-Do" ></div>
+            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" placeholder="Search To-Do" onkeyup="searchTask()" ></div>
             <h1 class="upline" style="font-size: 30px;">DELETED TO-DO</h1>
-            <h3></h3>
+            <ul id="taskList">
+                <!-- <li class="checked">task1</li>
+                <li>task1</li>
+                <li>task1</li> -->
+            </ul>
         </div>
     </div>
     <!-- <div ><a href="./darkmode.html">try dark mode</a></div> -->
+<script src="/script/delete.js"></script>
 </body>
-<script>
-    function darkMode(){
-        var element=document.body
-        element.classList.toggle("darkMode")
-    }
-    
-</script>
 </html>

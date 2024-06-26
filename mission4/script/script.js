@@ -1,7 +1,22 @@
 const inputTodo = document.getElementById("inputTodo")
 const taskList = document.getElementById("taskList")
 const priority = document.getElementById("priorityTodo")
-const tab = document.createElement('pre')
+const searchBar = document.getElementById("searchBar")
+const searchTask =()=>{
+    var a,textValue
+    var list = taskList.getElementsByTagName('li')
+
+    for(i=0;i<list.length;i++){
+        a=list[i];
+        textValue=a.textContent||a.innerText;
+        if(textValue.indexOf(searchBar.value)>-1){
+            list[i].style.display= "";
+        }else{
+            list[i].style.display="none"
+        }
+    }
+}
+
 const addTask =()=>{
     if(inputTodo.value===' '){
         alert("Please add task")
@@ -23,9 +38,11 @@ taskList.addEventListener("click",function(e){
         e.target.classList.toggle("checked")
         saveData()
     }else if(e.target.tagName==="SPAN"){
-        // softDelete.push(e.target.textContent)
+        var a = softDelete.push(e.target.parentElement.textContent)
+        console.log(softDelete);
         // softDelete.push(e.target.parentElement.textContent)
         localStorage.setItem('deleted',e.target.parentElement.textContent)
+        // localStorage.setItem('deleted',JSON.stringify(softDelete))
         e.target.parentElement.remove()
         // console.log(softDelete);
         saveData()
