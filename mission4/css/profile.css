@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+body{
+    color: #102C57;
+    background-color: #FEFAF6;
+    font-family:"Playwrite GB S";
+}
+
+/* Dark Mode CSS */
+.darkMode{
+    color:whitesmoke;
+    background-color: #202945
+}   
+.darkMode .main{
+    background-color:#363062;
+    color: #F5E8C7;
+}
+.darkMode #searchBar{
+    background-color: #363062;
+    color: #F5E8C7;
+    border: none;
+    border-bottom: 1px solid #435585;
+}
+.darkMode #inputTodo{
+    background-color: #435585;
+    color: #F5E8C7;
+}
+.darkMode #priorityTodo{
+    background-color: #F5E8C7;
+    color: #202945;
+}
+.darkMode button{
+    background-color: #F5E8C7;
+    color: #202945;
+    border-radius: 3px;
+    box-shadow: 2px;
+}
+.darkMode .navbar{
+    background-color: #435585;
+    color: #F5E8C7;
+}
+.darkMode .a{
+    color: #F5E8C7;  
+}
+.darkMode .upline{
+    border-bottom: 1px solid #F5E8C7;   
+}
+.darkMode .navDeleted:hover{
+    background-color: #202945;
+    color: #F5E8C7;
+}
+
+
+.a{
+    
+    color: #102C57;
+}
+h1{
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #DAC0A3;
+    min-height: 300px;
+    height: 500px;
+    /* min-width: 500px; */
+    width:20%;
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow:auto;
+    flex-direction: column;
+    background-color: #EADBC8;
+    height: 500px;
+    min-width: 660px;
+    width: 100%;
+    min-height:300px ;
+    max-width: 500px;
+    border-radius: 10px;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 10px 8px 10px 30px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    mix-blend-mode: difference;
+    background-size: cover;
+    background-position: center;
+    top: 19px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+ul li span:hover{
+    background-color: black;
+}
+
+#searchBar{
+    /* margin-top: 2px; */
+    border: none;
+    background-color:#EADBC8 ;
+    border-bottom: 1px solid #102C57;
+}
+#inputTodo{
+    height: 50px;
+    background-color: #DAC0A3;
+    border: none;
+    color:#435585
+}
+#priorityTodo{
+    background-color: #435585;
+    color: #EADBC8;
+}
+button{
+    background-color: #435585;
+    color: #EADBC8;
+    border-radius: 3px;
+}
+.dark{
+    background-color: #435585;
+    color: #EADBC8;
+    border-radius: 3px;
+}
+.upline{
+    margin-left: 20px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+}
+.navDeleted{
+    width:200px;
+    transition: 0.5s;
+}
+.navDeleted:hover{
+    background-color: #F5E8C7;
+    color: black;
+}
+a:link, a:active,a:visited,a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width:400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* font-size: 5px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        min-width: 375px;
+        height: 10%;
+        border-radius: 0%;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .main{
+        min-width: 375px;
+        overflow: auto;
+        border-radius: 0%;
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile To-Do-List</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <script src="https://kit.fontawesome.com/749d2b8155.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div style="align-self: center;padding-top: 10px;display: flex;flex-direction: column;">
+                <button onclick="darkMode()"class="dark">Dark Mode</button>
+                <div style="margin-right: 20px;"><i class="fa-solid fa-id-card"></i> Octavianus</div>
+            </div>
+            <div style="margin-top: 20px;margin-left: 20px;"id="navbar">
+                <h1 class="navTodo">To-Do </h1>
+                <h1 class="navDeleted"><a href="/pages/deleted.html"class="a">Done Task</a></h1>
+            </div>
+            <div style="display: flex;flex-direction: column;margin-left: 20px;">
+                <h1 class="end" >+ New Task</h1>
+                <input type="text" style="margin-right: 20px;font-family: 'Playwrite GB S';"id="inputTodo" placeholder="Add Your Today Task Here">
+                <div style="margin-top: 10px;">
+                    <label for="" >Set Priority</label>
+                        <select name="" id="priorityTodo" style="margin-left: 10px;height: 25px;">
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                        <!-- <br> -->
+                    <button style="margin-top:20px;height: 25px;margin-left: 20px;" onclick="addTask()">Add</button>
+                </div>      
+            </div>
+        </div>
+        <div class="main">
+            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" style="font-family: 'Playwrite GB S';" placeholder="Search To-Do" onkeyup="searchTask()" ></div>
+            <h1 class="upline" style="font-size: 20px;">TO-DO LIST</h1>
+            <ul id="taskList">
+                <!-- <li class="checked">task1</li>
+                <li>task1</li>
+                <li>task1</li> -->
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/script/profile.js"></script>
+</body>
+<script>
+    const user = localStorage.setItem("name", "Octavianus")
+</script>
+</html>

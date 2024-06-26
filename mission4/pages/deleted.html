@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done List</title>
+    <link rel="stylesheet" href="/css/deleted.css">
+    <script src="https://kit.fontawesome.com/749d2b8155.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div style="align-self: center;padding-top: 10px;display: flex;flex-direction: column;">
+                <button onclick="darkMode()"class="dark">Dark Mode</button>
+                <div style="margin-right: 20px;"><i class="fa-solid fa-id-card"></i> Octavianus</div>
+            </div>
+            <div style="margin-top: 20px;margin-left: 20px;"id="navbar">
+                <h1 class="navTodo"><a href="/pages/profile.html"class="a">To-Do</a> </h1>
+                <h1 class="navDeleted">Done Task</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div style="align-self:center;padding-top: 10px;"><input type="search" name="" id="searchBar" style="font-family: 'Playwrite GB S';" placeholder="Search To-Do" onkeyup="searchTask()" ></div>
+            <h1 class="upline" style="font-size: 20px;">Done Task</h1>
+            <ul id="taskList">
+                <!-- <li class="checked">task1</li>
+                <li>task1</li>
+                <li>task1</li> -->
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/script/deleted.js"></script>
+</body>
+</html>
